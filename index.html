@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, target=densitydpi-medium-dpi" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.mobile.theme-1.4.5.css" />
+    <title>FooBar Web Design</title>
+</head>
+
+<body>
+    <div class="app">
+        <div data-role="page" id="home">
+            <header data-role="header">
+                <h1>FooBar Web Design</h1>
+            </header>
+
+            <div data-role="content">
+                <nav data-role="navbar">
+                    <ul>
+                        <li><a href="#home" class="ui-btn-active">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <p>
+                    Lorem ipsum
+                </p>
+                <a href="#contact" class="ui-shadow ui-btn ui-corner-all">Contact us!</a>
+                This is the content
+            </div>
+
+            <footer data-role="footer">
+                <h3>Copyright &copy; 2016</h3>
+            </footer>
+
+        </div>
+
+        <div data-role="page" id="about">
+            <header data-role="header">
+                <h1>About FooBar</h1>
+            </header>
+
+            <div data-role="content">
+                <nav data-role="navbar">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about" class="ui-btn-active">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <h3>About Us</h3>
+
+                <p>Filler text</p>
+                This is the about content
+            </div>
+
+            <footer data-role="footer">
+                <h3>Copyright &copy; 2016</h3>
+            </footer>
+
+        </div>
+
+        <div data-role="page" id="contact">
+            <header data-role="header">
+                <h1>Contact</h1>
+            </header>
+
+            <div data-role="content">
+                <nav data-role="navbar">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact" class="ui-btn-active">Contact</a></li>
+                    </ul>
+                </nav>
+                <h3>Contact Us</h3>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.223442770236!2d-122.83475968505546!3d45.52570893735918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54950f2f2690e175%3A0x9854fc262cc758a!2s15220+NW+Greenbrier+Pkwy%2C+Beaverton%2C+OR+97006!5e0!3m2!1sen!2sus!4v1459795052500" width="450" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+                <h3>Location</h3>
+                <ul>
+                    <li><strong>FooBar Web Design</strong></li>
+                    <li>15220 NW Greenbrier Pkw, Beaverton OR</li>
+                    <li>dsloane@catalystdevworks.com</li>
+                    <li>555-368-8868</li>
+                </ul>
+            </div>
+
+            <footer data-role="footer">
+                <h3>Copyright &copy; 2016</h3>
+            </footer>
+
+        </div>
+    </div>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mobile-1.4.5.js"></script>
+
+</body>
+
+</html>
